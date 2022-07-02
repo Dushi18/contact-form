@@ -1,13 +1,14 @@
 const express = require('express');
 const db = require('../mongodb/conn');
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
 // const Tour = require('./../models/userModel');
 
 const mongoose = require('mongoose');
 const path = require('path');
 const User = require('./../models/userModel');
 //port 
-const port = 7000;
-
+const port = process.env.PORT;
 //launching express app
 const app = express();
 
