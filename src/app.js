@@ -5,6 +5,7 @@ const db = require('../mongodb/conn');
 const mongoose = require('mongoose');
 const path = require('path');
 const User = require('./../models/userModel');
+//port 
 const port = 7000;
 
 //launching express app
